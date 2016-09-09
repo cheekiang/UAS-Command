@@ -10,8 +10,9 @@
 		546D91371D80EE8B00777F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D91361D80EE8B00777F39 /* AppDelegate.swift */; };
 		546D91391D80EE8B00777F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D91381D80EE8B00777F39 /* ViewController.swift */; };
 		546D913C1D80EE8B00777F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D913A1D80EE8B00777F39 /* Main.storyboard */; };
-		546D913E1D80EE8B00777F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546D913D1D80EE8B00777F39 /* Assets.xcassets */; };
 		546D91411D80EE8B00777F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D913F1D80EE8B00777F39 /* LaunchScreen.storyboard */; };
+		546D91491D80F8BD00777F39 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546D91481D80F8BD00777F39 /* Media.xcassets */; };
+		546D914B1D81005A00777F39 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546D914A1D81005A00777F39 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,10 @@
 		546D91361D80EE8B00777F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546D91381D80EE8B00777F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		546D913B1D80EE8B00777F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		546D913D1D80EE8B00777F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546D91401D80EE8B00777F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546D91421D80EE8B00777F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546D91481D80F8BD00777F39 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = "/Users/jamestan/Documents/UAS Command/UAS Command/Media.xcassets"; sourceTree = "<absolute>"; };
+		546D914A1D81005A00777F39 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546D914B1D81005A00777F39 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,8 @@
 		546D912A1D80EE8B00777F39 = {
 			isa = PBXGroup;
 			children = (
+				546D914A1D81005A00777F39 /* MapKit.framework */,
+				546D91481D80F8BD00777F39 /* Media.xcassets */,
 				546D91351D80EE8B00777F39 /* UAS Command */,
 				546D91341D80EE8B00777F39 /* Products */,
 			);
@@ -57,7 +62,6 @@
 				546D91361D80EE8B00777F39 /* AppDelegate.swift */,
 				546D91381D80EE8B00777F39 /* ViewController.swift */,
 				546D913A1D80EE8B00777F39 /* Main.storyboard */,
-				546D913D1D80EE8B00777F39 /* Assets.xcassets */,
 				546D913F1D80EE8B00777F39 /* LaunchScreen.storyboard */,
 				546D91421D80EE8B00777F39 /* Info.plist */,
 			);
@@ -90,12 +94,20 @@
 		546D912B1D80EE8B00777F39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Govtech;
 				TargetAttributes = {
 					546D91321D80EE8B00777F39 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546D91411D80EE8B00777F39 /* LaunchScreen.storyboard in Resources */,
-				546D913E1D80EE8B00777F39 /* Assets.xcassets in Resources */,
+				546D91491D80F8BD00777F39 /* Media.xcassets in Resources */,
 				546D913C1D80EE8B00777F39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
